@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/titletextview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="Clone Your Website"
+            android:textColor="#fff"
+            android:textSize="25dp"
+
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/hehe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_corner"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+
+            <EditText
+                android:id="@+id/sourceText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="top"
+                android:hint="Your link"
+                android:minHeight="100dp"
+                android:inputType="textUri"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890:/._-"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end">
+
+                <ImageButton
+                    android:id="@+id/btnStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@null"
+                    android:src="@drawable/arrow" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/translatedText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="top"
+                android:minHeight="100dp"
+                android:textSize="16sp" />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
